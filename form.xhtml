@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h:form>
+                <h:panelGrid columns="3">
+                <h:outputLabel value="ID"></h:outputLabel>
+                <h:outputLabel value=":"></h:outputLabel>
+                <h:inputText value="#{ott.id}"></h:inputText>   
+                
+                <h:outputLabel value="Name"></h:outputLabel>
+                <h:outputLabel value=":"></h:outputLabel>
+                <h:inputText value="#{ott.name}"></h:inputText>
+                
+                <h:outputLabel value="Password"></h:outputLabel>
+                <h:outputLabel value=":"></h:outputLabel>
+                <h:inputSecret value="#{ott.password}"></h:inputSecret>
+                
+                <h:outputLabel value="Email"></h:outputLabel>
+                <h:outputLabel value=":"></h:outputLabel>
+                <h:inputText value="#{ott.email}"></h:inputText>
+                 
+              
+              
+              
+                <h:commandButton   value="Save" actionListener="#{ott.doSave()}" action="success.xhtml"></h:commandButton>
+                <h:commandButton   value="Update" actionListener="#{ott.doUpd()}" action="up.xhtml"></h:commandButton>
+                <h:commandButton   value="Delete" actionListener="#{ott.doDel()}" action="success.xhtml"></h:commandButton>
+                <h:commandButton   value="Show" actionListener="#{ott.sow()}" action="show.xhtml"></h:commandButton>
+                </h:panelGrid>
+               
+            </h:form>
+        </center>
+    </h:body>
+</html>
+
